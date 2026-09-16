@@ -9,10 +9,11 @@
         h1 { color: #1a73e8; border-bottom: 2px solid #1a73e8; padding-bottom: 10px; }
         h2 { color: #202124; margin-top: 30px; }
         p { margin-bottom: 15px; }
-        ul { margin-bottom: 15px; padding-left: 20px; }
+        ul, ol { margin-bottom: 15px; padding-left: 20px; }
         li { margin-bottom: 8px; }
         .contact-info { background: #e8f0fe; padding: 15px; border-radius: 8px; border-left: 5px solid #1a73e8; }
         .last-update { font-style: italic; color: #666; font-size: 0.9em; }
+        .official-link { color: #1a73e8; text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -20,21 +21,21 @@
     <h1>Política de Privacidade</h1>
     <p class="last-update">Última atualização: 15 de Setembro de 2026</p>
 
-    <p>Bem-vindo ao <strong>RJE: Finanças Pessoais</strong>. A sua privacidade é nossa prioridade. Esta Política de Privacidade explica como coletamos, usamos, protegemos e tratamos seus dados ao utilizar nosso aplicativo.</p>
+    <p>Bem-vindo ao <strong>RJE: Finanças Pessoais</strong>. A sua privacidade é nossa prioridade absoluta. Esta Política de Privacidade explica como coletamos, usamos, protegemos e tratamos seus dados ao utilizar nosso aplicativo disponível em <a href="https://rje-rafael.github.io/politica-privacidade/" class="official-link">rje-rafael.github.io</a>.</p>
 
     <h2>1. Informações que Coletamos</h2>
     <p>Para fornecer a melhor experiência de gestão financeira, o aplicativo trata os seguintes tipos de informações:</p>
     <ul>
-        <li><strong>Informações Pessoais:</strong> Coletamos seu Nome e E-mail fornecidos voluntariamente no momento do cadastro para fins de gestão de conta e sincronização de dados.</li>
-        <li><strong>Dados Financeiros:</strong> Processamos os lançamentos de despesas, receitas, categorias e metas inseridos manualmente por você. Estes dados são fundamentais para a funcionalidade principal do aplicativo.</li>
+        <li><strong>Informações Pessoais:</strong> Coletamos seu Nome e E-mail fornecidos voluntariamente no momento do cadastro para fins de gestão de conta e identificação de usuário.</li>
+        <li><strong>Dados Financeiros:</strong> Processamos os lançamentos de despesas, receitas, categorias e metas inseridos por você. Estes dados são armazenados localmente e/ou em nossos servidores seguros para garantir a continuidade da sua gestão entre dispositivos.</li>
         <li><strong>Status de Assinatura:</strong> Coletamos informações sobre o status do seu plano (Gratuito, Trial ou Pro) através da Google Play Billing API para validar seu acesso a recursos premium.</li>
-        <li><strong>Dados de Diagnóstico:</strong> Podemos coletar logs de falhas (crash reports) de forma anônima para identificar bugs e melhorar a estabilidade do app.</li>
+        <li><strong>Dados de Diagnóstico:</strong> Coletamos logs de falhas de forma anônima para melhorar a estabilidade do app.</li>
     </ul>
 
     <h2>2. Processamento de Pagamentos</h2>
     <p>O <strong>RJE: Finanças Pessoais</strong> utiliza o sistema oficial de faturamento do Google Play (Google Play Billing). Portanto:</p>
     <ul>
-        <li><strong>Não</strong> coletamos nem armazenamos números de cartões de crédito, senhas bancárias ou dados sensíveis de pagamento em nossos servidores.</li>
+        <li><strong>Não</strong> coletamos nem armazenamos números de cartões de crédito ou dados sensíveis de pagamento.</li>
         <li>Todas as transações financeiras são processadas com a segurança e criptografia nativa da Google Play Store.</li>
     </ul>
 
@@ -42,40 +43,36 @@
     <p>Seus dados são utilizados exclusivamente para:</p>
     <ul>
         <li>Garantir o funcionamento das funcionalidades de controle financeiro.</li>
-        <li>Gerenciar sua conta e validar o período de 60 dias de teste grátis.</li>
+        <li>Gerenciar sua conta e validar o período de 60 dias de teste grátis (degustação).</li>
         <li>Melhorar o desempenho e a segurança do aplicativo.</li>
-        <li>Cumprir obrigações legais de faturamento e suporte técnico.</li>
     </ul>
 
     <h2>4. Direitos do Usuário (LGPD)</h2>
-    <p>Em conformidade com a Lei Geral de Proteção de Dados (Brasil), você possui os seguintes direitos:</p>
+    <p>Em total conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018), você possui os seguintes direitos:</p>
     <ul>
-        <li><strong>Acesso e Correção:</strong> Você pode visualizar e editar suas transações e dados de perfil a qualquer momento dentro do app.</li>
-        <li><strong>Portabilidade:</strong> O aplicativo oferece ferramentas para exportação de dados em formatos compatíveis.</li>
-        <li><strong>Exclusão:</strong> Você tem o direito de excluir sua conta e todos os dados associados.</li>
+        <li><strong>Acesso e Correção:</strong> Você pode visualizar e editar seus dados de perfil e financeiros a qualquer momento dentro do app.</li>
+        <li><strong>Exclusão Permanente:</strong> Você tem o direito de excluir sua conta e todos os dados associados de forma definitiva.</li>
     </ul>
 
     <h2>5. Como Excluir seus Dados</h2>
-    <p>Nós respeitamos o seu direito ao esquecimento. Para excluir permanentemente seus dados:</p>
+    <p>Nós respeitamos o seu direito ao esquecimento. Para excluir permanentemente sua conta e todos os seus registros:</p>
     <ol>
         <li>Abra o aplicativo e acesse o menu <strong>Configurações</strong>.</li>
         <li>Clique no botão <strong>"Excluir Conta"</strong> localizado no final da página.</li>
-        <li>Confirme a ação no diálogo de segurança.</li>
+        <li>Confirme a ação no diálogo de segurança que será exibido.</li>
     </ol>
-    <p>Após a confirmação, todos os seus dados pessoais e registros financeiros serão removidos permanentemente de nossos bancos de dados ativos.</p>
+    <p>Ao realizar este procedimento, todos os seus dados pessoais e financeiros serão removidos imediatamente e permanentemente de nossa base de dados ativa.</p>
 
-    <h2>6. Segurança</h2>
-    <p>Implementamos medidas técnicas de segurança, como criptografia em trânsito (HTTPS/TLS), para garantir que seus dados não sejam acessados por terceiros não autorizados durante a comunicação entre o aplicativo e nossos serviços em nuvem.</p>
-
-    <h2>7. Contato</h2>
-    <p>Se você tiver dúvidas sobre esta Política de Privacidade ou sobre o tratamento de seus dados, entre em contato conosco:</p>
+    <h2>6. Contato</h2>
+    <p>Para dúvidas sobre privacidade ou solicitações relacionadas aos seus dados, entre em contato:</p>
     <div class="contact-info">
-        <strong>E-mail de Suporte/DPO:</strong> [rafaeledihlaine@gmail.com]<br>
-        <strong>Responsável:</strong> Equipe de Privacidade RJE
+        <strong>E-mail de Suporte/Privacidade:</strong>rafaeledihlaine@gmail.com<br>
+        <strong>Responsável:</strong> Equipe de Segurança de Dados RJE
     </div>
 
     <p style="margin-top: 40px; text-align: center; color: #999; font-size: 0.8em;">
-        &copy; 2026 RJE: Finanças Pessoais. Todos os direitos reservados.
+        &copy; 2026 RJE: Finanças Pessoais. Documento hospedado oficialmente em: <br>
+        <a href="https://rje-rafael.github.io/politica-privacidade/" style="color: #999;">https://rje-rafael.github.io/politica-privacidade/</a>
     </p>
 
 </body>
