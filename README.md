@@ -70,7 +70,7 @@
     <h2>7. Contato</h2>
     <p>Se você tiver dúvidas sobre esta Política de Privacidade ou sobre o tratamento de seus dados, entre em contato conosco:</p>
     <div class="contact-info">
-        <strong>E-mail de Suporte/DPO:</strong> [SEU-EMAIL-AQUI@dominio.com]<br>
+        <strong>E-mail de Suporte/DPO:</strong> [rafaeledihlaine@gmail.com]<br>
         <strong>Responsável:</strong> Equipe de Privacidade RJE
     </div>
 
