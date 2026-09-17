@@ -14,6 +14,7 @@
         .contact-info { background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 5px solid #1a73e8; margin-top: 20px; }
         .last-update { font-style: italic; color: #70757a; font-size: 14px; margin-bottom: 25px; }
         .highlight { color: #d93025; font-weight: bold; }
+        .billing-note { background: #e8f0fe; padding: 10px; border-radius: 4px; font-weight: 500; }
         a { color: #1a73e8; text-decoration: none; }
         a:hover { text-decoration: underline; }
     </style>
@@ -23,41 +24,73 @@
     <h1>Política de Privacidade</h1>
     <p class="last-update">Última atualização: 15 de Setembro de 2026</p>
 
-    <p>Bem-vindo ao <strong>RJE: Finanças Pessoais</strong>. A sua privacidade é nossa prioridade absoluta. Esta Política de Privacidade explica como tratamos seus dados ao utilizar nosso aplicativo disponível em <a href="https://rje-rafael.github.io/politica-privacidade/">rje-rafael.github.io</a>.</p>
+    <p>Bem-vindo ao <strong>RJE: Finanças Pessoais</strong>. A sua privacidade é o pilar central do nosso serviço. Esta Política explica como tratamos seus dados ao utilizar nosso aplicativo disponível em <a href="https://rje-rafael.github.io/politica-privacidade/">rje-rafael.github.io</a>.</p>
 
     <h2>1. Informações que Coletamos e Onde Elas Ficam</h2>
-    <p>O aplicativo opera sob o modelo <strong>"Offline First"</strong>, priorizando a segurança e a soberania do usuário:</p>
+    <p>O aplicativo opera sob o modelo <strong>"Offline First"</strong>, priorizando a segurança local e a soberania do usuário:</p>
     <ul>
-        <li><strong>Dados Financeiros (Soberania Local):</strong> Seus registros são armazenados <strong>exclusivamente na memória do seu dispositivo</strong>. Não temos acesso a esses dados.</li>
+        <li><strong>Dados Financeiros (Soberania Local):</strong> Registros de despesas, receitas, categorias e metas são armazenados <strong>exclusivamente na memória do seu dispositivo</strong>. Nossa equipe não tem acesso a esses dados, não os vendemos e não os enviamos para servidores externos por iniciativa própria.</li>
         <li><strong>Transparência sobre o Backup:</strong> 
             <ul>
-                <li><strong>Automático:</strong> O app utiliza o Backup Nativo do Android, que pode salvar uma cópia criptografada no seu Google Drive pessoal (gerenciado pelo Google).</li>
-                <li><strong>Manual:</strong> Você pode exportar manualmente seus dados através da função de Backup nas configurações do app.</li>
+                <li><strong>Automático:</strong> O aplicativo utiliza o recurso nativo do Android (Android Auto Backup), que pode salvar uma cópia criptografada dos dados no seu Google Drive pessoal. Este processo é gerenciado pelo Google e nós não temos acesso a este arquivo.</li>
+                <li><strong>Manual:</strong> O usuário pode, a qualquer momento, exportar manualmente seus dados através da função de Backup nas configurações do aplicativo.</li>
             </ul>
         </li>
-        <li><strong>Identificação:</strong> Nome e E-mail para gestão de conta e validação da licença Pro.</li>
+        <li><strong>Identificação:</strong> Nome e E-mail são coletados no cadastro apenas para fins de gestão de conta e identificação do perfil de usuário.</li>
+        <li><strong>Status de Assinatura:</strong> Consultamos a API do Google Play para verificar a validade do seu plano (Gratuito, Trial ou Pro).</li>
     </ul>
 
-    <h2>2. Processamento de Pagamentos</h2>
+    <h2>2. Processamento de Pagamentos e Assinaturas</h2>
+    <p>Utilizamos o sistema oficial do <strong>Google Play Billing</strong> para garantir conformidade e segurança técnica:</p>
     <ul>
-        <li><strong>Google Play Billing:</strong> Pagamentos processados com segurança pelo Google. Plano Pro: R$ 9,90/mês após o 30º dia de teste gratuito.</li>
-        <li><strong>Não coletamos</strong> dados de cartão de crédito.</li>
+        <li><strong>Segurança:</strong> Não coletamos, processamos ou armazenamos números de cartões de crédito ou dados bancários. Todas as transações ocorrem em janelas seguras gerenciadas pelo Google.</li>
+        <li><strong>Plano Pro:</strong> O acesso premium possui o valor de <strong>R$ 9,90/mês</strong>.</li>
+        <li><strong>Degustação (Trial):</strong> Ao iniciar o teste de 30 dias, a cobrança só será efetuada após o término do período de degustação.</li>
+    </ul>
+
+    <h2>3. Finalidade do Tratamento</h2>
+    <p>Seus dados são usados estritamente para:</p>
+    <ul>
+        <li>Garantir o funcionamento dos relatórios, orçamentos e gráficos financeiros no seu aparelho.</li>
+        <li>Validar o seu acesso ao Plano Pro ou ao período de teste de 30 dias.</li>
+        <li>Responder a solicitações de suporte enviadas por você via e-mail.</li>
+        <li>Melhorar a estabilidade do app através de registros de erro (logs) anônimos.</li>
+    </ul>
+
+    <h2>4. Direitos do Usuário (LGPD)</h2>
+    <p>Em conformidade com a Lei nº 13.709/2018 (Brasil), você possui total controle sobre seus dados:</p>
+    <ul>
+        <li><strong>Acesso e Correção:</strong> Você pode visualizar e editar seus dados financeiros diretamente na interface do app.</li>
+        <li><strong>Portabilidade:</strong> Você pode exportar seus dados a qualquer momento usando a função de Backup Manual.</li>
+        <li><strong>Exclusão:</strong> Você tem o direito de remover permanentemente sua conta e todos os registros associados.</li>
     </ul>
 
     <h2>5. Como Excluir seus Dados</h2>
+    <p>Para remover permanentemente suas informações e encerrar sua conta:</p>
     <ol>
-        <li>Acesse <strong>Configurações</strong> -> <strong>Excluir Conta</strong>.</li>
-        <li>A ação é irreversível e apaga o banco de dados local.</li>
+        <li>No aplicativo, acesse o menu <strong>Configurações</strong>.</li>
+        <li>Clique no botão <strong>"Excluir Conta"</strong>.</li>
+        <li>Confirme a ação no diálogo de segurança. <span class="highlight">Aviso: Esta ação é irreversível e os dados locais serão destruídos imediatamente.</span></li>
     </ol>
+    <p><em>Nota Importante: Excluir a conta no app não cancela automaticamente assinaturas na Google Play Store. O cancelamento deve ser feito manualmente na seção "Assinaturas" da sua conta Google.</em></p>
+
+    <h2>6. Segurança</h2>
+    <ul>
+        <li><strong>Proteção Biométrica:</strong> Suporte a desbloqueio por digital ou reconhecimento facial local.</li>
+        <li><strong>Sandbox do Android:</strong> Seus dados são isolados de outros aplicativos instalados no dispositivo.</li>
+        <li><strong>Criptografia em Trânsito:</strong> Comunicações técnicas com serviços do Google utilizam HTTPS/TLS.</li>
+    </ul>
 
     <h2>7. Contato e Suporte</h2>
+    <p>Se tiver dúvidas sobre esta política ou desejar exercer seus direitos, entre em contato:</p>
     <div class="contact-info">
-        <strong>E-mail de Suporte:</strong> rje.developer@gmail.com
+        <strong>E-mail de Suporte:</strong> rje.developer@gmail.com<br>
+        <strong>Responsável:</strong> Equipe de Privacidade RJE
     </div>
 
     <p style="margin-top: 50px; text-align: center; color: #bdc1c6; font-size: 12px;">
         &copy; 2026 RJE: Finanças Pessoais. Documento hospedado em: <br>
-        <a href="https://rje-rafael.github.io/politica-privacidade/" style="color: #bdc1c6;">rje-rafael.github.io/politica-privacidade/</a>
+        <a href="https://rje-rafael.github.io/politica-privacidade/" style="color: #bdc1c6;">https://rje-rafael.github.io/politica-privacidade/</a>
     </p>
 
 </body>
