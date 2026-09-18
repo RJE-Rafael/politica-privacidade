@@ -6,12 +6,11 @@
     <title>Política de Privacidade - RJE: Finanças Pessoais</title>
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --accent-color: #27ae60;
-            --text-color: #333333;
+            --primary-color: #1a73e8;
+            --text-color: #202124;
             --bg-color: #f8f9fa;
             --card-bg: #ffffff;
-            --border-color: #e9ecef;
+            --border-color: #dadce0;
         }
 
         body {
@@ -29,58 +28,69 @@
             background: var(--card-bg);
             padding: 40px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
             border: 1px solid var(--border-color);
         }
 
         h1 {
             color: var(--primary-color);
-            border-bottom: 2px solid var(--accent-color);
+            border-bottom: 2px solid var(--border-color);
             padding-bottom: 10px;
-            font-size: 1.8rem;
+            font-size: 24px;
         }
 
         h2 {
-            color: var(--primary-color);
+            color: var(--text-color);
             margin-top: 25px;
-            font-size: 1.3rem;
+            font-size: 18px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
         }
 
-        p, ul {
-            margin-bottom: 15px;
+        p, li {
+            font-size: 15px;
         }
 
-        ul {
+        ul, ol {
             padding-left: 20px;
         }
 
         li {
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            font-size: 13px;
+            color: #5f6368;
+            margin-bottom: 20px;
         }
 
         .highlight-box {
-            background-color: #e8f8f5;
-            border-left: 4px solid var(--accent-color);
+            background-color: #e8f0fe;
+            border-left: 4px solid var(--primary-color);
             padding: 15px;
             margin: 20px 0;
             border-radius: 0 4px 4px 0;
         }
 
-        .contact-box {
-            background-color: #f1f3f5;
+        .contact-card {
+            background: #f1f3f4;
             padding: 15px;
             border-radius: 6px;
-            margin-top: 20px;
+            margin-top: 15px;
         }
 
-        .last-updated {
-            font-size: 0.85rem;
-            color: #6c757d;
-            margin-bottom: 25px;
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 12px;
+            color: #5f6368;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
         }
 
         a {
-            color: var(--accent-color);
+            color: var(--primary-color);
             text-decoration: none;
         }
 
@@ -93,68 +103,88 @@
 
 <div class="container">
     <h1>Política de Privacidade</h1>
-    <div class="last-updated">Última atualização: Setembro de 2026</div>
+    <p class="last-updated">Última atualização: 18 de Setembro de 2026</p>
 
-    <p>A sua privacidade é fundamental para o <strong>RJE: Finanças Pessoais</strong>. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas informações pessoais, em conformidade com a <strong>Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018)</strong> e os requisitos de segurança e transparência da <strong>Google Play Store</strong>.</p>
+    <p>Bem-vindo ao <strong>RJE: Finanças Pessoais</strong>. A sua privacidade é o pilar central do nosso serviço. Esta Política explica como tratamos seus dados ao utilizar nosso aplicativo disponível em <a href="https://rje-rafael.github.io/politica-privacidade/">rje-rafael.github.io</a>.</p>
 
+    <h2>1. Informações que Coletamos e Onde Elas Ficam</h2>
+    <p>O aplicativo opera sob o modelo <strong>"Offline First"</strong>, priorizando a segurança local e a soberania do usuário:</p>
+    <ul>
+        <li><strong>Dados Financeiros (Soberania Local):</strong> Registros de despesas, receitas, categorias e metas são armazenados <strong>exclusivamente na memória do seu dispositivo</strong>. Nossa equipe não tem acesso a esses dados, não os vendemos e não os enviamos para servidores externos por iniciativa própria.</li>
+        <li><strong>Transparência sobre o Backup:</strong> 
+            <ul>
+                <li><strong>Automático:</strong> O aplicativo utiliza o recurso nativo do Android (Android Auto Backup), que pode salvar uma cópia criptografada dos dados no seu Google Drive pessoal. Este processo é gerenciado pelo Google e nós não temos acesso a este arquivo.</li>
+                <li><strong>Manual:</strong> O usuário pode, a qualquer momento, exportar manualmente seus dados através da função de Backup nas configurações do aplicativo.</li>
+            </ul>
+        </li>
+        <li><strong>Identificação:</strong> Nome e E-mail são coletados no cadastro apenas para fins de gestão de conta e identificação do perfil de usuário.</li>
+        <li><strong>Status de Assinatura:</strong> Consultamos a API do Google Play para verificar a validade do seu plano (Gratuito, Trial ou Pro).</li>
+    </ul>
+
+    <h2>2. Processamento de Pagamentos e Assinaturas</h2>
+    <p>Utilizamos o sistema oficial do <strong>Google Play Billing</strong> para garantir conformidade e segurança técnica:</p>
+    <ul>
+        <li><strong>Segurança:</strong> Não coletamos, processamos ou armazenamos números de cartões de crédito ou dados bancários. Todas as transações ocorrem em janelas seguras gerenciadas pelo Google.</li>
+        <li><strong>Plano Pro (Acesso Premium):</strong> O acesso premium possui o valor de <strong>R$ 9,90/mês</strong>.</li>
+        <li><strong>Degustação (Gratuito):</strong> Ao iniciar o teste de 30 dias, a cobrança só será efetuada após o término do período de degustação. O cancelamento pode ser feito a qualquer momento antes do fim do período sem custos adicionais.</li>
+    </ul>
+
+    <h2>3. Finalidade e Bases Legais do Tratamento</h2>
+    <p>Seus dados são usados estritamente para:</p>
+    <ul>
+        <li>Garantir o funcionamento dos relatórios, orçamentos e gráficos financeiros no seu aparelho (Execução de Contrato).</li>
+        <li>Validar o seu acesso ao Plano Pro ou ao período de degustação de 30 dias (Execução de Contrato).</li>
+        <li>Responder a solicitações de suporte enviadas por você via e-mail (Atendimento ao Cliente).</li>
+        <li>Melhorar a estabilidade e segurança do app através de registros de erro (logs) anônimos coletados por bibliotecas técnicas padrão (Legítimo Interesse).</li>
+    </ul>
+
+    <h2>4. Compartilhamento com Terceiros e SDKs</h2>
+    <p>Não vendemos nem compartilhamos seus dados pessoais para fins publicitários ou comerciais. No entanto, utilizamos serviços e bibliotecas de terceiros para o funcionamento seguro do aplicativo:</p>
+    <ul>
+        <li><strong>Google Play Services & Google Play Billing:</strong> Para processamento de assinaturas e validação de licenças.</li>
+        <li><strong>Ferramentas de Diagnóstico (ex.: Firebase Crashlytics):</strong> Podem coletar identificadores anônimos de dispositivo e logs técnicos estritamente em caso de falhas e erros no app para melhorias de estabilidade.</li>
+    </ul>
+
+    <h2>5. Direitos do Usuário (LGPD)</h2>
+    <p>Em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 - Brasil), você possui total controle sobre seus dados:</p>
+    <ul>
+        <li><strong>Acesso e Correção:</strong> Você pode visualizar e editar seus dados financeiros diretamente na interface do app.</li>
+        <li><strong>Portabilidade:</strong> Você pode exportar seus dados a qualquer momento usando a função de Backup Manual.</li>
+        <li><strong>Exclusão:</strong> Você tem o direito de remover permanentemente sua conta e todos os registros associados.</li>
+    </ul>
+
+    <h2>6. Como Excluir seus Dados</h2>
+    <p>Para remover permanentemente suas informações e encerrar sua conta:</p>
+    <p><strong>1. Diretamente no aplicativo:</strong></p>
+    <ol>
+        <li>No aplicativo, acesse o menu <strong>Configurações</strong>.</li>
+        <li>Clique no botão <strong>"Excluir Conta"</strong>.</li>
+        <li>Confirme a ação no diálogo de segurança. <span>Aviso: Esta ação é irreversível e os dados locais serão destruídos imediatamente.</span></li>
+    </ol>
+    <p><strong>2. Solicitação remota (caso tenha desinstalado o app):</strong></p>
+    <p>Se você já desinstalou o aplicativo do seu dispositivo, seus dados locais já foram removidos do aparelho. Para solicitar a confirmação de exclusão do seu vínculo de cadastro ou tirar dúvidas sobre o backup no Google Drive, envie um e-mail para <a href="mailto:rje.developer@gmail.com">rje.developer@gmail.com</a> com o assunto "Exclusão de Dados".</p>
     <div class="highlight-box">
-        <strong>Conceito Offline-First:</strong> O RJE é projetado prioritariamente para funcionar de forma offline. Seus dados financeiros são armazenados localmente no seu dispositivo e não são enviados para servidores próprios do aplicativo.
+        <em>Nota Importante: Excluir a conta no app ou solicitar a exclusão de dados não cancela automaticamente assinaturas ativas na Google Play Store. O cancelamento da assinatura deve ser feito diretamente na seção "Assinaturas" da sua conta Google Play.</em>
     </div>
 
-    <h2>1. Coleta e Uso de Dados</h2>
-    <p>Para o funcionamento pleno do aplicativo e gestão da sua conta, coletamos os seguintes dados:</p>
+    <h2>7. Segurança</h2>
     <ul>
-        <li><strong>Dados de Identificação da Conta:</strong> Nome e endereço de e-mail fornecidos durante o cadastro/login, utilizados estritamente para autenticação, gestão de acesso e suporte ao usuário.</li>
-        <li><strong>Dados Financeiros Pessoais:</strong> Lançamentos, categorias, metas e relatórios financeiros inseridos por você são processados e armazenados <strong>exclusivamente no seu dispositivo</strong>.</li>
-        <li><strong>Dados de Transação e Assinaturas:</strong> Processados de forma segura através da API do <strong>Google Play Billing</strong> para gestão da assinatura premium ou período de degustação (Trial). Não armazenamos seus dados de pagamento (como números de cartão de crédito).</li>
-        <li><strong>Dados de Diagnóstico e Erros (Logs):</strong> Podemos coletar identificadores anônimos de dispositivos e relatórios de falha (via serviços padrão do Google/Firebase) exclusivamente para identificar bugs, melhorar o desempenho e a estabilidade do aplicativo.</li>
+        <li><strong>Proteção Biométrica:</strong> Suporte a desbloqueio por digital ou reconhecimento facial para proteger seus dados localmente.</li>
+        <li><strong>Sandbox do Android:</strong> Seus dados são isolados de outros aplicativos instalados no dispositivo.</li>
+        <li><strong>Criptografia em Trânsito:</strong> Comunicações técnicas com serviços do Google utilizam conexões seguras HTTPS/TLS.</li>
     </ul>
 
-    <h2>2. Base Legal para o Tratamento de Dados (LGPD)</h2>
-    <p>Tratamos seus dados pessoais fundamentados nas seguintes bases legais dispostas no Artigo 7º da LGPD:</p>
-    <ul>
-        <li><strong>Execução de Contrato (Art. 7º, V):</strong> Necessário para a prestação dos serviços do aplicativo, verificação de assinaturas e autenticação do usuário.</li>
-        <li><strong>Legítimo Interesse (Art. 7º, IX):</strong> Para melhorias contínuas na estabilidade do aplicativo através da análise anônima de relatórios de erros.</li>
-        <li><strong>Consentimento (Art. 7º, I):</strong> Quando aplicável para permissões específicas solicitadas pelo dispositivo.</li>
-    </ul>
-
-    <h2>3. Backup e Armazenamento em Nuvem</h2>
-    <p>O recurso de backup do aplicativo utiliza a infraestrutura de sincronização do <strong>Android Auto Backup / Google Drive</strong> associada à sua conta pessoal do Google. As cópias de segurança são criptografadas e mantidas sob o controle do próprio usuário na sua conta Google, sem qualquer acesso direto por parte dos desenvolvedores do RJE.</p>
-
-    <h2>4. Compartilhamento de Dados com Terceiros</h2>
-    <p>O RJE não vende, aluga ou compartilha seus dados pessoais ou financeiros com terceiros para fins comerciais ou publicitários. O compartilhamento ocorre estritamente com provedores de infraestrutura essenciais para o funcionamento do app:</p>
-    <ul>
-        <li><strong>Google Play Services / Google Play Billing:</strong> Para autenticação e processamento seguro de compras/assinaturas na loja oficial.</li>
-        <li><strong>Google / Firebase Analytics & Crashlytics:</strong> Para coleta de métricas técnicas de desempenho e relatórios anônimos de erro (logs).</li>
-    </ul>
-
-    <h2>5. Seus Direitos como Titular dos Dados (LGPD)</h2>
-    <p>De acordo com a LGPD, você possui direito a:</p>
-    <ul>
-        <li>Confirmar a existência de tratamento de dados e acessar seus dados;</li>
-        <li>Corrigir dados incompletos, inexatos ou desatualizados;</li>
-        <li>Solicitar a anonimização, bloqueio ou eliminação de dados desnecessários ou excessivos;</li>
-        <li>Revogar o consentimento e solicitar a exclusão definitiva da sua conta e dados.</li>
-    </ul>
-
-    <h2>6. Exclusão de Conta e Dados Pessoais</h2>
-    <p>Você pode solicitar a exclusão de sua conta e dos seus dados associados a qualquer momento:</p>
-    <ul>
-        <li><strong>Pelo Aplicativo:</strong> Acesse as <em>Configurações > Minha Conta > Excluir Conta</em> dentro do aplicativo para remover seus dados de login.</li>
-        <li><strong>Via Web / Suporte Remoto:</strong> Caso tenha desinstalado o aplicativo ou prefira solicitar a exclusão remotamente, envie um e-mail para <a href="mailto:rje.developer@gmail.com">rje.developer@gmail.com</a> solicitando a exclusão definitiva dos seus dados de cadastro.</li>
-    </ul>
-    <p><em>Nota: Os dados financeiros armazenados localmente no seu aparelho serão removidos permanentemente ao desinstalar o aplicativo.</em></p>
-
-    <h2>7. Modificações nesta Política</h2>
-    <p>Podemos atualizar esta Política de Privacidade periodicamente para refletir alterações no aplicativo ou para conformidade com requisitos legais. Recomendamos a revisão desta página com frequência.</p>
-
-    <h2>8. Contato e Encarregado de Dados (DPO)</h2>
-    <div class="contact-box">
-        Se você tiver dúvidas, sugestões ou desejar exercer seus direitos como titular de dados pessoais, entre em contato com nosso suporte:
-        <br><br>
-        <strong>E-mail de Suporte:</strong> <a href="mailto:rje.developer@gmail.com">rje.developer@gmail.com</a><br>
-        <strong>Desenvolvedor Responsável:</strong> RJE Developer
+    <h2>8. Contato e Suporte</h2>
+    <p>Se tiver dúvidas sobre esta política ou desejar exercer seus direitos de titular, entre em contato:</p>
+    <div class="contact-card">
+        <strong>E-mail de Suporte / Encarregado:</strong> <a href="mailto:rje.developer@gmail.com">rje.developer@gmail.com</a><br>
+        <strong>Responsável:</strong> Equipe de Privacidade RJE
     </div>
+
+    <footer>
+        <p>© 2026 RJE: Finanças Pessoais. Documento hospedado em:<br>
+        <a href="https://rje-rafael.github.io/politica-privacidade/">https://rje-rafael.github.io/politica-privacidade/</a></p>
+    </footer>
 </div>
 
 </body>
